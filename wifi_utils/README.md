@@ -1,5 +1,9 @@
-# Blink Example
+# Better Wifi Example
 
-Starts a FreeRTOS task to blink an LED
+wifiInitSTA for station mode
 
-See the README.md file in the upper level 'examples' directory for more information about examples.
+wifiInitAP for Access point mode
+
+wifiInitSTAAP for both combined
+
+configure wifi parameters in wifi_config,h
