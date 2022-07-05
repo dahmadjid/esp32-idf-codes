@@ -2,8 +2,8 @@
 
 wifiInitSTA() for station mode
 
-wifiInitAP() for Access point mode
+wifiInitAP() for access point mode
 
-wifiInitSTAAP() for both combined
+wifiInitSTAAP() for softAP + station mode combined
 
 configure wifi parameters in wifi_config,h
