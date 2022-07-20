@@ -1,4 +1,11 @@
+#ifndef _NTP_UTILS_H_
+#define _NTP_UTILS_H_
+
 #include "esp_sntp.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #define NTP_TAG "NTP"
 
@@ -24,3 +31,10 @@ void getTime(time_t* now, tm* timeinfo)
     localtime_r(now, timeinfo);
     ESP_LOGI(NTP_TAG, "Year: %d || Hours: %d || Minutes: %d || Seconds: %d || Day of week: %d ", timeinfo->tm_year, timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec, timeinfo->tm_wday);
 }
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
