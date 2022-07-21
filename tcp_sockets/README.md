@@ -18,8 +18,7 @@ You need to provide it with MSG_DONTWAIT flag instead to make it behave like nor
 
 details in lwip/sockets.h (at least true for esp idf 4.3.2)
 
-
-
+```
 /* Flags we can use with send and recv. */
 #define MSG_PEEK       0x01    /* Peeks at an incoming message */
 #define MSG_WAITALL    0x02    /* Unimplemented: Requests that the function block until the full amount of data requested can be returned */
@@ -27,3 +26,4 @@ details in lwip/sockets.h (at least true for esp idf 4.3.2)
 #define MSG_DONTWAIT   0x08    /* Nonblocking i/o for this operation only */
 #define MSG_MORE       0x10    /* Sender will send more */
 #define MSG_NOSIGNAL   0x20    /* Uninmplemented: Requests not to send the SIGPIPE signal if an attempt to send is made on a stream-oriented socket that is no longer connected. */
+```
